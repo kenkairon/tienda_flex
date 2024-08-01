@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de iphone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }        
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #555;
+        }
+        .product button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; padding: 20px;">Phone Store</h1>
+    <div class="container">
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmg1d92NfyULgRdsK7BPLlJHMAjRHis8F2w&s" alt="Phone 1">
+            <h2>Iphone 15</h2>
+            <p>$1.500.000</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://i5.walmartimages.com/seo/Open-Box-Apple-iPhone-13-Pro-Max-A2484-128GB-Blue-US-Model-Factory-Unlocked-Cell-Phone_6ba1f90b-3b76-4e73-bb5c-8e353d988df0.de5842bcd17198be175ce2c6486b140c.jpeg" alt="Phone 3">
+            <h2>Iphone 13</h2>
+            <p>$900.000</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="data:image/jpeg;base64,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" alt="Phone 4">
+            <h2>Iphone 14</h2>
+            <p>$950.000</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://i5.walmartimages.com/seo/Open-Box-Apple-iPhone-13-Pro-Max-A2484-128GB-Blue-US-Model-Factory-Unlocked-Cell-Phone_6ba1f90b-3b76-4e73-bb5c-8e353d988df0.de5842bcd17198be175ce2c6486b140c.jpeg" alt="Phone 3">
+            <h2>Iphone 13</h2>
+            <p>$900.000</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
